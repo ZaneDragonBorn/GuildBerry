@@ -8,12 +8,19 @@
   --text-color: 255,255,255;
   --icon-shape: 5px;
   --primary-border-radius: 5px;
-  --secondary-border-radius: 10px;
+  --secondary-border-radius: px;
   --online-color: #88ff88;
   --away-color: #ffff88;
   --dnd-color: #ff8888;
 }
 
+#app .ChatEmbed-body {
+  padding: 20px;
+  background-color: var(--secondary-bg);
+}
+#app .ChatMessageThread-container {
+  background-color: #373a4c66;
+}
 #app .ChannelWrapper-container,
 #app .MyTeamsPage-container,
 #app .PlayerLfgPortal-container,
@@ -70,7 +77,7 @@
 #app .CalloutBadge-container,
 #app .VerticalSelectionIndicator-container,
 #app .SwitchInput-container-on .SwitchInput-slide {
-  background-color: var(--primary-color);
+  background-color: #F5C400;
   fill: white;
 }
 #app .PostDisplayV2-container {
@@ -85,7 +92,7 @@
 #app .LinkRenderer:active,
 #app .LinkRenderer:focus,
 #app .GuildedText-container-color-gilded1 {
-  color: var(--primary-color);
+  color: #F5C400;
 }
 #app .SidebarInfoItem-container {
   background: none;
