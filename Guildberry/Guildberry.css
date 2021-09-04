@@ -8,12 +8,51 @@
   --text-color: 255,255,255;
   --icon-shape: 5px;
   --primary-border-radius: 5px;
-  --secondary-border-radius: px;
+  --secondary-border-radius: 5px;
   --online-color: #88ff88;
   --away-color: #ffff88;
   --dnd-color: #ff8888;
 }
+  /* Explore Pages */
+#app .ExplorePage-content {
+  background-color: var(--tertiary-bg);
+}
 
+
+  /* Members Section */
+#app .ItemManagerFilterWrapper-container {
+  background-color: var(--tertiary-bg);
+}
+
+
+  /* Media Channel Stuff */
+#app .MediaSplitView-info-pane {
+  background-color: var(--tertiary-bg);
+}
+#app .MediaSplitView-preview {
+  background-color: var(--primary-bg);
+}
+#app .SlateEditor-container-type-default:not(.SlateEditor-container-read-only) .SlateEditor-editor {
+  background-color: var(--text-box-color);
+}
+#app .SlateToolbarStrip {
+  background-color: var(--text-box-color);
+}
+#app .MediaDisplayItemV3-meta-info {
+  background-color: var(--text-box-color);
+}
+
+
+  /* Announcement Channel Stuff */
+#app .PostDisplayV2-container {
+      background-color: var(--text-box-color);
+  }
+
+
+  /* Text Channel Stuff */
+#app .ChannelPinnedMessages-container {
+  background-color: var(--tertiary-bg);
+}
 #app .ChatEmbed-body {
   padding: 20px;
   background-color: var(--secondary-bg);
@@ -21,6 +60,8 @@
 #app .ChatMessageThread-container {
   background-color: #373a4c66;
 }
+
+
 #app .ChannelWrapper-container,
 #app .MyTeamsPage-container,
 #app .PlayerLfgPortal-container,
@@ -80,9 +121,7 @@
   background-color: #F5C400;
   fill: white;
 }
-#app .PostDisplayV2-container {
-    background-color: var(--text-box-color);
-}
+
 #app .TeamPostRow-container {
     background-color: var(--text-box-color);
 }
