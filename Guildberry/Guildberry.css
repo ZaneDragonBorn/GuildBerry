@@ -1,0 +1,279 @@
+:root {
+  --primary-color: #36363D;
+  --secondary-color: #F5C400;
+  --primary-bg: #111720;
+  --secondary-bg: #111820;
+  --tertiary-bg: #111920;
+  --text-box-color: #19232b;
+  --text-color: 255,255,255;
+  --icon-shape: 5px;
+  --primary-border-radius: 5px;
+  --secondary-border-radius: 10px;
+  --online-color: #88ff88;
+  --away-color: #ffff88;
+  --dnd-color: #ff8888;
+}
+
+#app .ChannelWrapper-container,
+#app .MyTeamsPage-container,
+#app .PlayerLfgPortal-container,
+#app .UserProfileV3-container,
+#app .TournamentsPortalPage-container {
+  background-color: var(--primary-bg);
+}
+#app .LayeredPageContent-content {
+  background-color: var(--primary-bg);
+}
+
+#app .PageSidebarWrapper-container,
+#app .TeamPageNavV3-nav-sections,
+#app .ScreenHeader-container,
+#app .WebAppV2-sidebar,
+#app .TeamPageNavV3-header,
+#app .ChatChannelList-container,
+#app .NavV4SectionSidebar-container,
+#app .OptionsMenuPageWrapper-container,
+#app .ModalV2-container {
+  background-color: var(--secondary-bg);
+}
+#app .GroupSelector-container,
+#app .ChatChannelInput-editor,
+#app .WindowsTitleBar-container,
+#app .Navbar-container,
+#app .ChatV2MessageReplyTooltip-content-wrapper,
+#app .QuickActionBar-container,
+#app .TransientMenu-container-style-default,
+#app .ProfileHoverCardV2Overlay-container,
+#app .UserProfilePostPanel-container,
+#app .DraftInputWithTitleV2-title-wrapper,
+#app .OpenGraphEmbed-content,
+#app .CodeContainerRenderer-container,
+#app .CodeLineRenderer,
+#app .TeamThreadPostPanelDisplay-container,
+#app .TeamThreadPostEditor-container,
+#app .OptionsMenu-container-desktop .OptionsMenu-options-control,
+#app .DefaultReadonlyEditableForm-container,
+#app .UserSettingsServerSubscriptionsUpsell-container,
+#app .ServerSubscriptionBar-container,
+#app .PersistentUpsell-container-flavor-settings,
+#app .SocialLinkPanel-header,
+#app .ReactionPicker-content,
+#app .ChannelActivityDisplay-container,
+#app .ChannelActivityDisplay-group-header,
+#app .ChatChannelInputInlineReplyStatusBar-container {
+  background-color: var(--tertiary-bg);
+}
+#app.DraftInputWithTitleV2-title-wrapper-unexpanded {
+  background-color: var(--tertiary-bg);
+}
+#app .InlineAddItemControl-add-icon,
+#app .CalloutBadge-container,
+#app .VerticalSelectionIndicator-container,
+#app .SwitchInput-container-on .SwitchInput-slide {
+  background-color: var(--primary-color);
+  fill: white;
+}
+#app .PostDisplayV2-container {
+    background-color: var(--text-box-color);
+}
+#app .TeamPostRow-container {
+    background-color: var(--text-box-color);
+}
+#app .LinkRenderer,
+#app .LinkRenderer:hover,
+#app .LinkRenderer:visited,
+#app .LinkRenderer:active,
+#app .LinkRenderer:focus,
+#app .GuildedText-container-color-gilded1 {
+  color: var(--primary-color);
+}
+#app .SidebarInfoItem-container {
+  background: none;
+}
+#app .Navbar-container,
+#app .GroupSelector-container,
+#app .ChatChannelInput-editor,
+#app .WindowsTitleBar-container,
+#app .GroupSelector-container,
+#app .WebAppV2-sidebar,
+#app .PageSidebarWrapper-container,
+#app .ScreenHeader-container,
+#app .QuickActionBar-container,
+#app .ChatChannelList-container,
+#app .OpenGraphEmbed-content {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#app .GroupSelector-container,
+#app .ScreenHeader-container {
+  z-index: 5;
+}
+#app .ProfileHoverCardV2Overlay-action-menu,
+#app .ReactionPickerFooter-container,
+#app .ReactionPickerNavbar-container,
+#app .ReactionPicker-search-bar,
+#app .TeamChannelItemContents-container-selected,
+#app .ChannelActivityDisplay-item {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+#app .ChatV2Message-container-mentioned {
+  background-color: transparent;
+  border-left: 5px solid var(--primary-color);
+  border-radius: var(--primary-border-radius);
+}
+#app .ChatV2Message-container-mentioned::Before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: -100;
+}
+#app .QuickActionBar-container {
+  border: none;
+}
+#app .QuickActionBar-container .QuickActionBar-action {
+  width: 33px;
+  height: 33px;
+}
+#app .ChatV2Message-container:hover {
+  background: none;
+}
+#app .ChatV2Message-container:hover::Before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--primary-color);
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: -100;
+}
+#app .OpenGraphEmbed-content {
+  border: none;
+  border-left: 5px solid var(--primary-color);
+  border-radius: 0 var(--secondary-border-radius) var(--secondary-border-radius) 0;
+}
+#app .TeamNavHeaderRowButton-container,
+#app .FormConfirmButtonV2-container {
+  border: none;
+  background: var(--primary-color);
+  border-radius: var(--primary-border-radius);
+}
+#app .TeamNavHeaderRowButton-container:hover,
+#app .FormConfirmButtonV2-container:hover {
+  background-color: var(--secondary-color);
+}
+#app .TeamNavHeaderRowButton-container .FormConfirmButtonV2-button-content,
+#app .FormConfirmButtonV2-container .FormConfirmButtonV2-button-content {
+  color: white;
+}
+#app .RangeSlider-container-type-gilded .RangeSlider-selected-rail {
+  background: var(--primary-color);
+}
+#app .HotkeyRecorder-container {
+  border: none;
+  background-color: var(--tertiary-bg);
+}
+#app .FormConfirmButtonV2-container-hollow {
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: var(--primary-border-radius);
+}
+#app .ChatV2MessageHeader-avatar-wrapper,
+#app .ChatV2MessageHeader-avatar,
+#app .PlayerCardProfilePicture-avatar,
+#app .UserProfilePictureControl-picture,
+#app .LoggedInUserAvatar-picture {
+  border-radius: var(--icon-shape);
+  background-color: rgba(0, 0, 0, 0.75);
+}
+#app .UserProfilePostPanel-container {
+  border-radius: var(--secondary-border-radius);
+  border-top-color: var(--primary-color);
+}
+#app .DraftInputWithTitleV2-title-wrapper {
+  border-radius: var(--secondary-border-radius);
+}
+#app .UserGameSummaryCard-container {
+  border-radius: var(--secondary-border-radius);
+  background-color: var(--tertiary-bg);
+  overflow: hidden;
+}
+#app .UserGameSummaryCard-container * {
+  border: none;
+}
+#app .OnlineStatusDisplay-container {
+  position: absolute;
+  top: -0.15em;
+  left: -0.15em;
+  bottom: -0.15em;
+  right: -0.15em;
+  z-index: -1;
+  width: unset;
+  height: unset;
+  border: none;
+}
+#app .OnlineStatusDisplay-container[style*="rgb(83, 218, 51)"] {
+  background-color: var(--online-color) !important;
+}
+#app .OnlineStatusDisplay-container[style*="rgb(236, 178, 0)"] {
+  background-color: var(--away-color) !important;
+}
+#app .OnlineStatusDisplay-container[style*="rgb(223, 83, 83)"] {
+  background-color: var(--dnd-color) !important;
+}
+#app .LoggedInUserAvatar-online-status {
+  display: none;
+}
+#app .MyTeamsPage-grid .CardWrapper-container {
+  background-color: var(--secondary-bg);
+  border-radius: var(--secondary-border-radius);
+}
+#app .MyTeamsPage-grid .CardWrapper-container:after {
+  content: none;
+}
+#app .MyTeamsPage-grid .CardWrapper-container image {
+  border-radius: var(--secondary-border-radius) !important;
+  mask: none !important;
+  overflow: hidden;
+}
+#app .TeamChannelItemContents-container-selected {
+  background-color: var(--primary-color);
+}
+#app .TeamSelectorItem-container .NavSelectorItem-contents:After {
+  content: unset;
+}
+#app .TeamSelectorItem-container .NavSelectorItem-container {
+  will-change: transform;
+  transition: transform 150ms ease-in;
+}
+#app .TeamSelectorItem-container .NavSelectorItem-container:Hover {
+  transform: scale(1.2);
+}
+#app .TeamSelectorItem-container .NavSelectorItem-container:Active {
+  transform: scale(0.8);
+}
+#app .TeamSelectorItem-container .NavSelectorItem-container.NavSelectorItem-container-active {
+  transform: scale(1.5);
+}
+#app .ParagraphRenderer,
+#app .TeamNavSectionsList-header,
+#app .OptionsMenu-container-desktop,
+#app .Form-header {
+  color: rgb(var(--text-color));
+}
+#app .GuildedText-container-type-subtext3,
+#app .TeamNavSectionItem-name {
+  color: rgba(var(--text-color), 0.8);
+}
+#app .ChatV2MessageTimestamp-container {
+  color: rgba(var(--text-color), 0.5);
+}
+#app .ChannelIcon-icon-primary {
+  fill: rgb(var(--text-color));
+}
+
+/*# sourceMappingURL=Blueberry.css.map */

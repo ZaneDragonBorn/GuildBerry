@@ -1,0 +1,339 @@
+﻿:root {
+  --primary-color: #9999ff;
+  --secondary-color: #b3b3ff;
+
+  --primary-bg: #171726;
+  --secondary-bg: #1f1f33;
+  --tertiary-bg: #262640;
+
+  --text-color: 255,255,255;
+  
+  --icon-shape: 5px;
+  --primary-border-radius: 5px;
+  --secondary-border-radius: 10px;
+  
+  --online-color: #88ff88;
+  --away-color: #ffff88;
+  --dnd-color: #ff8888;
+
+  // Uncomment for eye death, light theme
+  //--primary-bg: #ffffff;
+  //--secondary-bg: #eeeeee;
+  //--tertiary-bg: #dddddd;
+  //
+  //--text-color: 0,0,0;
+}
+
+$primaryColor: var(--primary-color);
+$secondaryColor: var(--secondary-color);
+
+$primaryBg: var(--primary-bg);
+$secondaryBg: var(--secondary-bg);
+$tertiaryBg: var(--tertiary-bg);
+$iconShape: var(--icon-shape);
+
+$iconShape: var(--icon-shape);
+$primaryBorderRadius: var(--primary-border-radius);
+$secondaryBorderRadius: var(--secondary-border-radius);
+
+$shadow: 0 0 10px rgba(black, 0.3);
+$ft: 150ms ease-in;
+
+#app {
+  .ChannelWrapper-container,
+  .MyTeamsPage-container,
+  .PlayerLfgPortal-container,
+  .UserProfileV3-container,
+  .TournamentsPortalPage-container {
+    background-color: $primaryBg;
+  }
+
+  .PageSidebarWrapper-container,
+  .TeamPageNavV3-nav-sections,
+  .ScreenHeader-container,
+  .WebAppV2-sidebar,
+  .TeamPageNavV3-header,
+  .ChatChannelList-container,
+  .NavV4SectionSidebar-container,
+  .OptionsMenuPageWrapper-container,
+  .ModalV2-container {
+    background-color: $secondaryBg;
+  }
+
+  .GroupSelector-container,
+  .ChatChannelInput-editor,
+  .WindowsTitleBar-container,
+  .Navbar-container,
+  .ChatV2MessageReplyTooltip-content-wrapper,
+  .QuickActionBar-container,
+  .TransientMenu-container-style-default,
+  .ProfileHoverCardV2Overlay-container,
+  .UserProfilePostPanel-container,
+  .DraftInputWithTitleV2-title-wrapper,
+  .OpenGraphEmbed-content,
+  .CodeContainerRenderer-container,
+  .CodeLineRenderer,
+  .TeamThreadPostPanelDisplay-container,
+  .TeamThreadPostEditor-container,
+  .OptionsMenu-container-desktop .OptionsMenu-options-control,
+  .DefaultReadonlyEditableForm-container,
+  .UserSettingsServerSubscriptionsUpsell-container,
+  .ServerSubscriptionBar-container,
+  .PersistentUpsell-container-flavor-settings,
+  .SocialLinkPanel-header,
+  .ReactionPicker-content,
+  .ChannelActivityDisplay-container,
+  .ChannelActivityDisplay-group-header,
+  .ChatChannelInputInlineReplyStatusBar-container {
+    background-color: $tertiaryBg;
+  }
+
+  .InlineAddItemControl-add-icon,
+  .CalloutBadge-container,
+  .VerticalSelectionIndicator-container,
+  .SwitchInput-container-on .SwitchInput-slide {
+    background-color: $primaryColor;
+    fill: white;
+  }
+
+  .LinkRenderer,
+  .LinkRenderer:hover,
+  .LinkRenderer:visited,
+  .LinkRenderer:active,
+  .LinkRenderer:focus,
+  .GuildedText-container-color-gilded1 {
+    color: $primaryColor
+  }
+
+  .SidebarInfoItem-container {
+    background: none;
+  }
+
+  .Navbar-container,
+  .GroupSelector-container,
+  .ChatChannelInput-editor,
+  .WindowsTitleBar-container,
+  .GroupSelector-container,
+  .WebAppV2-sidebar,
+  .PageSidebarWrapper-container,
+  .ScreenHeader-container,
+  .QuickActionBar-container,
+  .ChatChannelList-container,
+  .OpenGraphEmbed-content {
+    box-shadow: $shadow;
+  }
+  
+  .GroupSelector-container,
+  .ScreenHeader-container {
+    z-index: 5;
+  }
+
+  .ProfileHoverCardV2Overlay-action-menu,
+  .ReactionPickerFooter-container,
+  .ReactionPickerNavbar-container,
+  .ReactionPicker-search-bar,
+  .TeamChannelItemContents-container-selected,
+  .ChannelActivityDisplay-item {
+    background-color: rgba(white, 0.05);
+  }
+  
+  // Messages
+  .ChatV2Message-container-mentioned {
+    background-color: transparent;
+    border-left: 5px solid $primaryColor;
+
+    border-radius: $primaryBorderRadius;
+    
+    &::Before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      
+      background-color: $primaryColor;
+      opacity: 0.3;
+      
+      pointer-events: none;
+      z-index: -100;
+    }
+  }
+
+  .QuickActionBar-container {
+    border: none;
+
+    .QuickActionBar-action {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .ChatV2Message-container:hover {
+    background: none;
+    
+    &::Before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; bottom: 0; right: 0;
+      
+      background-color: $primaryColor;
+      opacity: 0.1;
+      
+      pointer-events: none;
+      z-index: -100;
+    }
+  }
+
+  .OpenGraphEmbed-content {
+    border: none;
+    border-left: 5px solid $primaryColor;
+    border-radius: 0 $secondaryBorderRadius $secondaryBorderRadius 0;
+  }
+  
+  // Buttons
+  .TeamNavHeaderRowButton-container,
+  .FormConfirmButtonV2-container {
+    border: none;
+    
+    background: $primaryColor;
+    border-radius: $primaryBorderRadius;
+    
+    &:hover {
+      background-color: $secondaryColor;
+    }
+
+    .FormConfirmButtonV2-button-content {
+      color: white;
+    }
+  }
+
+  .RangeSlider-container-type-gilded .RangeSlider-selected-rail {
+    background: $primaryColor;
+  }
+
+  .HotkeyRecorder-container {
+    border: none;
+    background-color: $tertiaryBg;
+  }
+
+  .FormConfirmButtonV2-container-hollow {
+    border: none;
+    background-color: $primaryColor;
+    border-radius: $primaryBorderRadius;
+  }
+  
+  // Icons
+  .ChatV2MessageHeader-avatar-wrapper,
+  .ChatV2MessageHeader-avatar,
+  .PlayerCardProfilePicture-avatar,
+  .UserProfilePictureControl-picture,
+  .LoggedInUserAvatar-picture {
+    border-radius: $iconShape;
+    background-color: rgba(black, 0.75);
+  }
+  
+  // User profiles
+
+  .UserProfilePostPanel-container {
+    border-radius: $secondaryBorderRadius;
+    border-top-color: $primaryColor;
+  }
+
+  .DraftInputWithTitleV2-title-wrapper {
+    border-radius: $secondaryBorderRadius;
+  }
+
+  .UserGameSummaryCard-container {
+    border-radius: $secondaryBorderRadius;
+    background-color: $tertiaryBg;
+    overflow: hidden;
+    
+    * {
+      border: none;
+    }
+  }
+
+  .OnlineStatusDisplay-container {
+    position: absolute;
+    $inset: -0.15em;
+    top: $inset; left: $inset; bottom: $inset; right: $inset;
+    
+    z-index: -1;
+    
+    width: unset;
+    height: unset;
+    border: none;
+    
+    // Holy shit Guilded uses a fucking style attribute for the status colors I'm gonna have a stroke
+    &[style*="rgb(83, 218, 51)"] { background-color: var(--online-color) !important; }
+    &[style*="rgb(236, 178, 0)"] { background-color: var(--away-color) !important; }
+    &[style*="rgb(223, 83, 83)"] { background-color: var(--dnd-color) !important; }
+  }
+
+  .LoggedInUserAvatar-online-status { display: none; }
+
+  // My Servers Page
+  .MyTeamsPage-grid {
+    .CardWrapper-container {
+      background-color: $secondaryBg;
+      border-radius: $secondaryBorderRadius;
+      
+      &:after {
+        content: none;
+      }
+      
+      image {
+        border-radius: $secondaryBorderRadius !important;
+        mask: none !important;
+        overflow: hidden;
+      }
+    }
+  }
+  
+  // Channels
+  .TeamChannelItemContents-container-selected {
+    background-color: $primaryColor;
+  }
+
+  .TeamSelectorItem-container {
+    .NavSelectorItem-contents:After {
+      content: unset;
+    }
+
+    .NavSelectorItem-container {
+      will-change: transform;
+      transition: transform $ft;
+      
+      &:Hover {
+        transform: scale(1.2);
+      }
+      
+      &:Active {
+        transform: scale(0.8);
+      }
+      
+      &.NavSelectorItem-container-active {
+        transform: scale(1.5);
+      }
+    }
+}
+  
+  // Icky
+  .ParagraphRenderer,
+  .TeamNavSectionsList-header,
+  .OptionsMenu-container-desktop,
+  .Form-header {
+    color: rgb(var(--text-color));
+  }
+
+  .GuildedText-container-type-subtext3,
+  .TeamNavSectionItem-name {
+    color: rgba(var(--text-color), 0.8);
+  }
+
+  .ChatV2MessageTimestamp-container {
+    color: rgba(var(--text-color), 0.5);
+  }
+
+  .ChannelIcon-icon-primary {
+    fill: rgb(var(--text-color));
+  }
+}
