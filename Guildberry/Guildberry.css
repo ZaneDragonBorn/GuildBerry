@@ -1,18 +1,30 @@
 :root {
   --primary-color: #36363D;
   --secondary-color: #F5C400;
-  --primary-bg: #111720;
-  --secondary-bg: #111820;
-  --tertiary-bg: #111920;
+  --primary-bg: #111520;
+  --secondary-bg: #111620;
+  --tertiary-bg: #111720;
   --text-box-color: #19232b;
+  --info-box-color: #1e2633;
   --text-color: 255,255,255;
-  --icon-shape: 5px;
+  --icon-shape: 100px;
   --primary-border-radius: 5px;
   --secondary-border-radius: 5px;
   --online-color: #88ff88;
   --away-color: #ffff88;
   --dnd-color: #ff8888;
 }
+
+  /* User Profile */
+
+
+
+  /* Overview Section */
+#app .TeamOverviewContentItemCard-container {
+  background: var(--info-box-color);
+}
+
+
   /* Explore Pages */
 #app .ExplorePage-content {
   background-color: var(--tertiary-bg);
@@ -22,6 +34,61 @@
   /* Members Section */
 #app .ItemManagerFilterWrapper-container {
   background-color: var(--tertiary-bg);
+}
+
+
+  /* Forum Channel Stuff */
+#app .TeamThreadPostPanelDisplay-container  {
+  background-color: var(--info-box-color);
+}
+
+
+  /* Calendar Channel Stuff */
+#app .FullSizedCalendarDay-container {
+  background-color: var(--info-box-color);
+}
+#app .FullSizedCalendarDay-container-different-month {
+  background-color: #1a202b;
+}
+#app .FullSizedCalendarDay-container:hover {
+  transform: scale(1.1);
+  z-index: 100;
+  box-shadow: 5px 10px 8px #141414;
+}
+#app .TeamEventDetails-post-metadata, .TeamEventDetails-status, .TeamEventDetails-item {
+  background-color: var(--info-box-color);
+}
+#app .EventCardMetadata-container-size-lg {
+  background-color: var(--info-box-color);
+}
+#app .EventTemporalChannelDisplay-container {
+  background-color: var(--info-box-color);
+}
+#app .PanelList-container-size-md {
+  height: 800px;
+}
+
+#app .SearchAndSelectControl-search-bar {
+  background-color: var(--text-box-color);
+}
+#app #app .FormConfirmButtonV2-container-hollow {
+  border-radius: 12px;
+}
+#app .ModalHeaderV2-container {
+  background-color: var(--primary-bg);
+}
+#app .FullSizedCalendarEvent-details:hover {
+  background-color: #2b3340;
+  border-radius: 8px;
+}
+
+
+  /* Document Channel Stuff */
+#app .DocSummaryInfo-container {
+  background-color: var(--secondary-bg);
+  }
+#app .DocDisplayItem-preview-summary {
+  background-color: var(--text-box-color);
 }
 
 
@@ -60,6 +127,18 @@
 #app .ChatMessageThread-container {
   background-color: #373a4c66;
 }
+#app ::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF !important;
+}
+#app .SpoilerRenderer-read-only.SpoilerRenderer-has-revealed .SpoilerRenderer-child-container {
+  background-color: #404957;
+  border-radius: 5px;
+}
+#app .SpoilerRenderer-container, .SpoilerRenderer-child-container {
+  background-color: #404957;
+  border-radius: 5px;
+  padding: 1px;
+}
 
 
 #app .ChannelWrapper-container,
@@ -82,7 +161,7 @@
 #app .NavV4SectionSidebar-container,
 #app .OptionsMenuPageWrapper-container,
 #app .ModalV2-container {
-  background-color: var(--secondary-bg);
+  background-color: var(--tertiary-bg);
 }
 #app .GroupSelector-container,
 #app .ChatChannelInput-editor,
@@ -97,7 +176,6 @@
 #app .OpenGraphEmbed-content,
 #app .CodeContainerRenderer-container,
 #app .CodeLineRenderer,
-#app .TeamThreadPostPanelDisplay-container,
 #app .TeamThreadPostEditor-container,
 #app .OptionsMenu-container-desktop .OptionsMenu-options-control,
 #app .DefaultReadonlyEditableForm-container,
@@ -192,8 +270,8 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: var(--primary-color);
-  opacity: 0.1;
+  background-color: #2d3445;
+  opacity: 0.5;
   pointer-events: none;
   z-index: -100;
 }
@@ -251,17 +329,7 @@
 #app .UserGameSummaryCard-container * {
   border: none;
 }
-#app .OnlineStatusDisplay-container {
-  position: absolute;
-  top: -0.15em;
-  left: -0.15em;
-  bottom: -0.15em;
-  right: -0.15em;
-  z-index: -1;
-  width: unset;
-  height: unset;
-  border: none;
-}
+
 #app .OnlineStatusDisplay-container[style*="rgb(83, 218, 51)"] {
   background-color: var(--online-color) !important;
 }
